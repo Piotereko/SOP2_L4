@@ -1,0 +1,9 @@
+make all
+./l8-1_server a 2000&
+./l8-1_client_local a 2 1 +
+./l8-1_client_local a 2 1 '*'
+./l8-1_client_local a 2 0 /
+./l8-1_client_tcp localhost 2000 234 17  /
+
+killall -s 'SIGINT' l8-1_server 
+make clean
