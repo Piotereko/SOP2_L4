@@ -1,0 +1,4 @@
+#/usr/bin/sh
+make 
+clang-format -i sop-enalia.c
+./sop-enalia 1410
